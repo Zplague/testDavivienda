@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davivienda | Beneficios y Caracteristicas</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/payout.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/constants.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo.png" alt="Logo Davivienda" class="header__logo">
+            <img src="img/close.png" alt="Salir" class="header__close">
+        </div>
+        <div class="subheader">
+            <p class="subheader__name">Cristian David Arias Correa</p>
+            <div class="subheader__titles">
+                <img src="img/list.png" alt="list" class="subheader__titles-list">
+                <p class="subheader__titles-title">
+                    Prueba
+                    <span class="subheader__titles-subtitle">Beneficios y Caracteristicas</span>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__header">
+                <a href="form.html"><img src="img/back.png" alt="" class="content__header-icon"></a>
+                <p class="content__header-label">Atrás</p>
+            </div>
+            <div class="payout__container">
+                <div class="payout__payment">
+                    <p class="payout__payment-text">¿Como quiere pagar su seguro?</p>
+                    <div class="payout__payment-radio">
+                        <input type="radio"  name="payment" value="mensual">
+                        <label for="mensual">Mensual</label>     
+                        <input type="radio"  name="payment" value="anual">
+                        <label for="anual">Anual</label>                        
+                    </div>
+                </div>
+                <div class="payout__cover" id="cover">
+                    <p class="payout__cover-text">Seleccione el tipo de cobertura que desea adquirir:</p>
+                    <div class="payout__cover-radio">
+                        <input type="radio"  name="family" value="1">
+                        <label for="mensual">
+                            Cobertura familiar
+                            <br>
+                            <span class="payout__cover-price">$106.200</span> 
+                        </label>
+                        <img src="img/plan1.png" alt="plan 1" class="payout__cover-img">
+                    </div>
+                    <div class="payout__cover-view" id="view" onclick="view()">
+                        <p class="payout__cover-view--text">Ver más información</p>
+                        <img src="img/down.png" alt="" class="payout__cover-view--icon" id="icon">
+                    </div>
+                    <div class="payout__cover-unfold" id="unfold">
+                        <ul class="payout__cover-unfold--list">
+                            <li class="payout__cover-unfold--item">
+                                <img src="img/check2.png" alt="" class="payout__cover-unfold--icon">
+                                Solo disponible para las ciudades de Bogotá y Medellín.
+                            </li>
+                            <li class="payout__cover-unfold--item">
+                                <img src="img/check2.png" alt="" class="payout__cover-unfold--icon">
+                                Queda activo 5 días despues de haberlo solicitado.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="payout__cover-radio">
+                        <input type="radio"  name="family" value="1">
+                        <label for="mensual">
+                            Cobertura familiar
+                            <br>
+                            <span class="payout__cover-price">$56.600</span> 
+                        </label>
+                        <img src="img/plan2.png" alt="plan 2" class="payout__cover-img">
+                    </div>
+                    <div class="payout__cover-view">
+                        <p class="payout__cover-view--text">Ver más información</p>
+                        <img src="img/down.png" alt="" class="payout__cover-view--icon">
+                    </div>
+                </div>
+            </div>
+            <a href="final.html" class="content__button" >Continuar</a>
+        </div>
+    </div>
+</body>
+</html>

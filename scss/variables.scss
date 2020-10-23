@@ -1,0 +1,53 @@
+//colors
+
+$primary: #ed1c24;
+$primary-dark: #ac1015;
+$white: #ffffff;
+$black: #000000;
+
+$grey1: #efefef;
+$grey2: #eaeaea;
+$grey3: #e2e2e2;
+$grey4: #6d6d6d;
+$grey5: #8a8a8a;
+$grey6: #f6f6f6;
+
+//fonts 
+
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 900;
+
+$titles: 20px;
+$subtitles: 16px;
+$paragraph: 14px; 
+
+// Misc
+
+$box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.1);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: $paragraph;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+}

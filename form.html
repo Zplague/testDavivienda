@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davivienda | Beneficios y Caracteristicas</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/form.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/constants.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo.png" alt="Logo Davivienda" class="header__logo">
+            <img src="img/close.png" alt="Salir" class="header__close">
+        </div>
+        <div class="subheader">
+            <p class="subheader__name">Cristian David Arias Correa</p>
+            <div class="subheader__titles">
+                <img src="img/list.png" alt="list" class="subheader__titles-list">
+                <p class="subheader__titles-title">
+                    Prueba
+                    <span class="subheader__titles-subtitle">Beneficios y Caracteristicas</span>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__header">
+                <a href="index.html"><img src="img/back.png" alt="" class="content__header-icon"></a>
+                <p class="content__header-label">Atrás</p>
+            </div>
+            <div class="content__form">
+                <p class="content__form-title">
+                    Indique los siguientes datos para continuar con la solicitud de su adelanto de pensión:
+                </p>
+                <div class="content__form-input">
+                    <label for="income">¿Cual es el valor total de sus ingresos mensuales?</label>
+                    <input type="text" id="income">
+                </div>
+                <div class="content__form-input">
+                    <label for="activity">¿Cual es su actividad laboral actual?</label>
+                    <select name="activity" id="activity">
+                        <option value="empleado">Empleado</option>
+                        <option value="negocio">Negocio Propio</option>
+                    </select>
+                </div>
+                <div class="content__form-input">
+                    <label for="activity">¿Cual es el nombre de su empresa?</label>
+                    <input type="text" id="activity">
+                </div>
+                <div class="content__form-input">
+                    <label for="contratc">¿Que tipo de contrato tiene?</label>
+                    <select name="contract" id="contract">
+                        <option value="indefinido">Término indefinido  </option>
+                        <option value="servicios">Contrato de servicios </option>
+                    </select>
+                </div>
+                <div class="content__form-input">
+                    <label for="city">¿Cual es su ciudad de residencia?</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="content__form-input">
+                    <label for="activity">¿Cual es su actividad laboral actual?</label>
+                    <input type="text" id="activity">
+                </div>
+                <div class="content__form-input">
+                    <label for="address">¿Cual es su dirección de residencia?</label>
+                    <input type="address" id="address" placeholder="Carrera 9 # 116 - 08, Bogotá">
+                    <img src="img/edit.png" alt="Edit" class="content__form-address">
+                </div>
+                <div class="content__form-input">
+                    <label for="asesor">Si esta recibiendo ayuda de un <b>asesor del Banco,</b> ingrese su código del asesor</label>
+                    <input type="asesor" id="asesor" placeholder="Opcional">
+                    <img src="img/info.png" alt="Edit" class="content__form-optional" onclick="tooltip()">
+                    <div class="content__form-input--tooltip" id="tooltip">
+                        <p class="content__form-input--text">Si le prestaron asesoria, ingrese el codigo del asesor comercial
+                            que lo esta ayudando con esta solicitud, de lo contrario no diligencie este espacio
+                        </p>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <div class="content__form-modal" id="modal">
+                    <div class="content__form-modal--container">
+                        <div class="content__form-modal--header">
+                            <img src="img/family.png" alt="" class="content__form-modal--icon">
+                            <p class="content__form-modal--title">Seguro de Vida Online</p>
+                        </div>
+                        <hr class="content__form-modal--divider">
+                        <div class="content__form-modal--text">
+                            <p class="content__form-modal--subtitle">¿Quiere proteger a su familia?</p>
+                            <p class="content__form-modal--content">Cubra los gastos de su hogar en caso de:</p>
+                            <ul class="content__form-modal--list">
+                                <li class="content__form-modal--item">
+                                    <img src="img/vignette.png" alt="" class="content__form-modal--vignette">
+                                    Muerte por cualquier causa.
+                                </li>
+                                <li class="content__form-modal--item">
+                                    <img src="img/vignette.png" alt="" class="content__form-modal--vignette">
+                                    Incapacidad total y permanente.
+                                </li>
+                            </ul>
+                            <a class="content__form-modal--link">Ver Términos y Condiciones</a>
+                            <div class="content__form-modal--buttons">
+                                <a href="" class="content__button content__button--disable">Omitir</a>    
+                                <a href="payout.html" class="content__button">Adquirir</a>    
+                            </div>
+                            <p class="content__form-modal--disclaimer">
+                                Este seguro es expedido por <b>Seguros Bolivar S.A</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="content__button" onclick="offers()">Continuar</button>
+        </div>
+    </div>
+</body>
+</html>

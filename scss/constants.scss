@@ -1,0 +1,64 @@
+@import 'scss/variables';
+@import 'scss/mixins';
+
+.container {
+    @include container;
+}
+
+.header {
+    @include header;
+
+    &__logo {
+        height: auto;
+        width: 80%;        
+    }
+
+    &__close {
+        height: 40px;
+        margin: 8px 0 0 8px;
+        width: 40px;
+    }
+}
+
+.subheader {
+    background-color: $grey3;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0 25px;
+    width: 100%;
+
+    &__name {
+        color: $grey4;
+        font-size: $titles;
+        font-weight: $font-bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__titles {
+        display: flex;
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            font-size: $subtitles;
+            padding: 10px;
+            margin: 0 0 20px 0;
+        }
+
+        &-subtitle {
+            font-size: $paragraph;
+        }
+        
+        &-list {
+            @include icon;
+            height: 35px;
+            margin: 10px 4px;
+        }
+    }
+}
+
+.content {
+    @include content;
+}

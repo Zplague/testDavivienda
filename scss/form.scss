@@ -1,0 +1,193 @@
+@import 'scss/variables';
+@import 'scss/mixins';
+
+.content {
+
+    &__form {
+        align-items: center;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        &-title {
+            color: $grey4;
+            font-size: $paragraph;
+            font-weight: $font-bold;
+            margin: 0;
+            padding: 10px;
+        }
+
+        &-input {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            position: relative;
+            width: 95%;
+
+            &--tooltip {
+                background-color: $grey3;
+                border-radius: 5px;
+                box-shadow: $box-shadow;
+                display: none;
+                left: 10%;
+                margin: 0 auto;
+                padding: 5px 20px;
+                position: absolute;
+                width: 70%;
+                z-index: 2;
+            }
+
+            &--text {
+                color: $black;
+            }
+
+            label {
+                font-size: $paragraph;
+                padding-bottom: 5px;
+            }
+
+            input,
+            select {
+                background-color: $white;
+                border: solid $grey3 2px;
+                border-radius: 5px;
+                padding: 8px;
+            }
+        }
+
+        &-address {
+            height: 30px;
+            position: absolute;
+            width: 30px;
+            top: 45%;
+            right: 5%;
+        }
+
+        &-optional {
+            height: 30px;
+            position: absolute;
+            right: 5%;
+            top: 55%;
+            width: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-modal {
+            align-items: center;
+            background-color: $grey2;
+            border-radius: 10px;
+            display: none;
+            position: absolute;
+            top: 65%;
+            width: auto;
+
+            &--container {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-height: 400px;
+                padding: 25px;
+            }
+
+            &--header {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            &--title {
+                color: $grey4;
+                font-size: $titles;
+                font-weight: $font-bold;
+            }
+
+            &--subtitle {
+                color: $grey4;
+                font-size: $subtitles;
+                font-weight: $font-bold;
+            }
+
+            &--divider {
+                opacity: .5;
+                width: 100%;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                margin: 0 auto;
+                padding: 0;
+                width: 100%;
+            }
+
+            &--item {
+                align-items: center;
+                display: flex;
+                padding: 5px 0;
+            }
+
+            &--text {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &--link {
+                color: $grey4;
+                font-weight: $font-bold;
+                margin-bottom: 10px;
+                margin-top: 20px;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            &--buttons {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &--disclaimer {
+                color: $grey4;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+                width: 50%;
+            }
+        }
+    }
+
+    &__button {
+        @include primary;
+        width: 40%;
+
+        &--disable {
+            background-color: $grey5;
+
+            &:hover {
+                background-color: $grey4;
+            }
+        }
+    }
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    bottom: 0;
+    left: 0;
+    min-height: 1100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 5ms;
+}

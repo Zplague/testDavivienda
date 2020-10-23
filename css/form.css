@@ -1,0 +1,191 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+p {
+  font-size: 14px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  outline: none; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+p {
+  font-size: 14px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  outline: none; }
+
+.content__form {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  .content__form-title {
+    color: #6d6d6d;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0;
+    padding: 10px; }
+  .content__form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    width: 95%; }
+    .content__form-input--tooltip {
+      background-color: #e2e2e2;
+      border-radius: 5px;
+      box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+      display: none;
+      left: 10%;
+      margin: 0 auto;
+      padding: 5px 20px;
+      position: absolute;
+      width: 70%;
+      z-index: 2; }
+    .content__form-input--text {
+      color: #000000; }
+    .content__form-input label {
+      font-size: 14px;
+      padding-bottom: 5px; }
+    .content__form-input input,
+    .content__form-input select {
+      background-color: #ffffff;
+      border: solid #e2e2e2 2px;
+      border-radius: 5px;
+      padding: 8px; }
+  .content__form-address {
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    top: 45%;
+    right: 5%; }
+  .content__form-optional {
+    height: 30px;
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    width: 30px; }
+    .content__form-optional:hover {
+      cursor: pointer; }
+  .content__form-modal {
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 65%;
+    width: auto; }
+    .content__form-modal--container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-height: 400px;
+      padding: 25px; }
+    .content__form-modal--header {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .content__form-modal--title {
+      color: #6d6d6d;
+      font-size: 20px;
+      font-weight: 900; }
+    .content__form-modal--subtitle {
+      color: #6d6d6d;
+      font-size: 16px;
+      font-weight: 900; }
+    .content__form-modal--divider {
+      opacity: .5;
+      width: 100%; }
+    .content__form-modal--list {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%; }
+    .content__form-modal--item {
+      align-items: center;
+      display: flex;
+      padding: 5px 0; }
+    .content__form-modal--text {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .content__form-modal--link {
+      color: #6d6d6d;
+      font-weight: 900;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: underline; }
+    .content__form-modal--buttons {
+      align-items: center;
+      display: flex;
+      justify-content: space-between; }
+    .content__form-modal--disclaimer {
+      color: #6d6d6d;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      width: 50%; }
+
+.content__button {
+  border: 0;
+  border-radius: 8px;
+  background-color: #ed1c24;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color .4s;
+  width: 35%;
+  width: 40%; }
+  .content__button:hover {
+    background-color: #ac1015;
+    cursor: pointer; }
+  .content__button--disable {
+    background-color: #8a8a8a; }
+    .content__button--disable:hover {
+      background-color: #6d6d6d; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  bottom: 0;
+  left: 0;
+  min-height: 1100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 5ms; }

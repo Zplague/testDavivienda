@@ -1,0 +1,110 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+p {
+  font-size: 14px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  outline: none; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+p {
+  font-size: 14px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  outline: none; }
+
+.content {
+  align-items: flex-start; }
+  .content__button {
+    border: 0;
+    border-radius: 8px;
+    background-color: #ed1c24;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color .4s;
+    width: 35%; }
+    .content__button:hover {
+      background-color: #ac1015;
+      cursor: pointer; }
+  .content__card {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .content__card-title {
+      background-color: #6d6d6d;
+      border-radius: 10px 10px 0 0;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+      padding: 5px 10px;
+      width: 96%; }
+    .content__card-main {
+      background-color: #efefef;
+      border-radius: 10px;
+      padding: 8px; }
+    .content__card-subheader {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 15px; }
+    .content__card-check {
+      align-items: center;
+      display: flex; }
+      .content__card-check img {
+        margin: 5px; }
+    .content__card-subtitle {
+      color: #6d6d6d;
+      font-size: 16px;
+      font-weight: 900; }
+    .content__card-text {
+      padding: 0 15px; }
+    .content__card-list {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0 0 0;
+      margin: 0; }
+    .content__card-items {
+      background-color: #e2e2e2;
+      border-radius: 10px;
+      margin: 4px 0;
+      padding: 10px; }
+      .content__card-items--text {
+        display: flex;
+        color: #6d6d6d;
+        flex-direction: column;
+        padding: 0 15px; }
+
+.subheader__titles {
+  font-weight: 500; }

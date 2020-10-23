@@ -1,0 +1,89 @@
+@import 'scss/variables';
+@import 'scss/mixins';
+
+.content {
+    align-items: flex-start;
+
+    &__button {
+        @include primary;
+    }
+
+    &__card {
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-title {
+            background-color: $grey4;
+            border-radius: 10px 10px 0 0;
+            color: $white;
+            font-size: $titles;
+            font-weight: $font-medium;
+            margin: 0;
+            padding: 5px 10px;
+            width: 96%;
+        }
+
+        &-main {
+            background-color: $grey1;
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        &-subheader {
+            background-color: $white;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        &-check {
+            align-items: center;
+            display: flex;
+
+            img {
+                margin: 5px;
+            }
+        }
+
+        &-subtitle {
+            color: $grey4;
+            font-size: $subtitles;
+            font-weight: $font-bold;
+        }
+
+        &-text {
+            padding: 0 15px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0 0 0;
+            margin: 0;
+            
+        }
+
+        &-items {
+            background-color: $grey3;
+            border-radius: 10px;
+            margin: 4px 0;
+            padding: 10px;
+
+            &--text {
+                display: flex;
+                color: $grey4;
+                flex-direction: column;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.subheader {
+    &__titles {
+        font-weight: $font-medium;
+    }
+}
